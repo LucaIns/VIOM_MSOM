@@ -2,7 +2,7 @@
 clc, clear, clf, close all
 
 % choose dataset 
-datch = 4   ;
+datch = 3;
 % intercept
 intercept = 1;
 
@@ -133,7 +133,7 @@ end
 
 %% diagnostics
 
-cleans = setdiff(1:n, [down_FSR; trim_FSR]);
+cleans = setdiff(1:n, [down_FSR, trim_FSR]);
 
 if any(strcmp('MM', est_nam))
     % MM

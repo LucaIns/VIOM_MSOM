@@ -253,12 +253,12 @@ for SNR_i = 1:length(SNR_tot)
                         'init', floor(n/2), 'msg', 0, 'plots', monit==1, 'weak',1);
                     %FSRoutW = FSRout; % use FSR as usual
                     % stronger signal
-                    trim_FSR =  FSRoutW.outliers;
+                    trim_FSR =  FSRoutW.outliers';
                     if any(isnan(FSRoutW.outliers))
                         trim_FSR =  [];
                     end
                     % weaker signal
-                    down_FSR = FSRoutW.VIOMout;
+                    down_FSR = FSRoutW.VIOMout';
                     tempt = toc(ttic);
                     
                     % FSRwj: joint weights
