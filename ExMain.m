@@ -108,7 +108,7 @@ for i = 1:len_est
             trim_FSR =  [];
         end
         % weaker signal
-        down_FSR = FSRoutw.VIOMout; % setdiff(1:n, [FSRoutw.ListCl'; trim_FSR])';  
+        down_FSR = FSRoutw.outliersVIOM; % setdiff(1:n, [FSRoutw.ListCl'; trim_FSR])';  
         if any(isnan(down_FSR))
             down_FSR = solLXS.outliers;
             warning('FSR has found no outliers; LMS is used to detect VIOM');

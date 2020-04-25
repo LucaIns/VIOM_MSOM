@@ -14,7 +14,7 @@ rng(10) % seed for general simulation
 % if monit=2 results over all iterations are monitored (without stopping)
 % if monit=3 final results function of n are showed
 % [TBA: if monit=4 final results function of contamination mechanism are showed]
-monit = 3;
+monit = 1;
     % monit = 1;
 % progress bar (it might become annoying)
 progr = 1;
@@ -258,7 +258,7 @@ for SNR_i = 1:length(SNR_tot)
                         trim_FSR =  [];
                     end
                     % weaker signal
-                    down_FSR = FSRoutW.VIOMout';
+                    down_FSR = FSRoutW.outliersVIOM';
                     tempt = toc(ttic);
                     
                     % FSRwj: joint weights
