@@ -5,7 +5,7 @@
 This MATLAB code implements the simulation study (`simMain.m`) and real-world examples (`ExMain.m`) included in the paper: 
 
 Insolia Luca, Chiaromonte Francesca, and Riani Marco (2020),
-"*A Robust Estimation Approach for Mean-Shift and Variance-Inflation Outliers*" -- SUBMITTED.
+"*A Robust Estimation Approach for Mean-Shift and Variance-Inflation Outliers*". Festschrift in Honor of R. Dennis Cook. Efstathia Bura and Bing Li (eds.), Springer, 2021.
 
 It is fully integrated with [FSDA](https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda/).
 See for instance our new `viom()` function therein.
